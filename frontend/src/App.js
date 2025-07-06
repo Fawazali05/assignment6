@@ -1,7 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-function App() {
-  return <h1>Hello from React Frontend</h1>;
-}
+const App = () => {
+  return <h1>Hello from React Frontend!</h1>;
+};
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
